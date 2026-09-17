@@ -2,6 +2,7 @@
 
 ## Contexto
 
+
 Uma equipe de desenvolvimento recebeu a tarefa de criar uma página web para divulgação de um **evento fictício de tecnologia**.
 
 O projeto será desenvolvido de forma colaborativa utilizando:

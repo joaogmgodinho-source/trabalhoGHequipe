@@ -21,72 +21,86 @@ Sucesso: 22C55E
 
 Erro: EF4444 */
 
+/* Estilos globais */
 * {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
 
+/* Estilos para o elemento html */
+html {
+  scroll-behavior: smooth;
+}
 
+/* mudando a fonte do h1 e h2 */
 h1 , h2{
     font-family: 'League Spartan';
 }
 
+/* mudando a fonte do paragrafo e links */
 p, a {
     font-family: 'Barlow';
 }
 
+/* dando um espaço em cima */
 nav {
     margin-top: 10px;
-    font-family: 'Barlow';
 }
 
+/* estilizando o header*/
 header {
     display: flex;
     gap: 50px;
     justify-content: center;
+    background-color: #0B0F1A;
+    border: 2px solid #1A1F2E;
+    padding: 10px;
 }
 
+/* estilizando a lista */
 ul {
     display: flex;
     gap: 30px;
 }
 
+/* estilizando o link */
 a {
     cursor: pointer;
     color: #F8FAFC;
 }
 
+/* estilizando o link para quando passar o mouse por cima */
 nav a:hover {
     padding: 8px;
     background-color: #3B82F6;
     border-radius: 20px;
 }
 
-img {
+/* limita o tamanho da imagem do header */
+.img-header {
+    width: 100%;
     max-width: 200px;
 }
 
+/* muda a cor do fundo */
 body {
     background-color: #0B0F1A;
 }
 
-header {
-    background-color: #0B0F1A;
-    border: 2px solid #1A1F2E;
-    padding: 10px;
-}
-
+/* muda a cor do h2 do banner */
 .banner-deco h2{
     color: #8B5CF6;
 }
 
+/* muda a cor e tamanho do paragrafo do banner */
 .banner-deco p {
     font-size: large;
     color: #F8FAFC;
     margin-bottom: 40px;
 }
 
+/* estiliza o banner */
 .banner-deco {
     margin-top: 10px;
     background: linear-gradient(to right, #1A1F2E, #8B5CF6);
@@ -95,6 +109,7 @@ header {
     border-radius: 40px;
 }
 
+/* muda a cor do link do banner */
 .banner-deco a {
     padding: 15px;
     background: linear-gradient(to right, #3B82F6, #8B5CF6);

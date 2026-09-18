@@ -124,7 +124,7 @@ body {
     cursor: pointer;
     list-style: none;
 }
-/*  */
+/* estiliza o menu */
 .contato-menu summary::-webkit-details-marker {
     display: none;
 }

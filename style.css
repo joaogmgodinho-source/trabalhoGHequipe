@@ -59,7 +59,7 @@ header {
 }
 
 /* estilizando a lista */
-ul {
+.menu{
     display: flex;
     gap: 30px;
 }
@@ -114,4 +114,149 @@ body {
     padding: 15px;
     background: linear-gradient(to right, #3B82F6, #8B5CF6);
     border-radius: 30px;
+}
+/* checkbox do contato no footer*/
+.contato-menu {
+    position: relative;
+}
+/* muda o cursor */
+.contato-menu summary {
+    cursor: pointer;
+    list-style: none;
+}
+/* estiliza o menu */
+.contato-menu summary::-webkit-details-marker {
+    display: none;
+}
+/* caixa contato com cores e tamanho */
+.caixa-contato {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 280px;
+    padding: 20px;
+    background: #1A1F2E;
+    border: 1px solid #3B82F6;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+/* estiliza  o h3 da caixa de contato */
+.caixa-contato h3 {
+    color: #F8FAFC;
+    margin-top: 0;
+}
+/* estiliza o label na caixa de contato */
+.caixa-contato label {
+    display: block;
+    color: #F8FAFC;
+    margin-top: 10px;
+}
+/* as cores da caixa de contato e borda tamanho */
+.caixa-contato input,
+.caixa-contato textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 10px;
+    background: #0B0F1A;
+    color: #F8FAFC;
+    border: 1px solid #3B82F6;
+    border-radius: 8px;
+}
+/* estiliza a caixa de contato  */
+.caixa-contato textarea {
+    height: 90px;
+    resize: vertical;
+}
+/* estiliza o botao caixa de contato com cores,tamanho */
+.caixa-contato button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+    color: white;
+    cursor: pointer;
+}
+/* checkbox da localização no footer*/
+.localizacao-menu {
+    position: relative;
+}
+/* estiliza a checkbox do summary  */
+.localizacao-menu summary {
+    cursor: pointer;
+    list-style: none;
+}
+/* estiliza a localização  */
+.localizacao-menu summary::-webkit-details-marker {
+    display: none;
+}
+/* cor de fundo e tamanhos da caixa de localização */
+.caixa-localizacao {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 280px;
+    padding: 15px;
+    background: #1A1F2E;
+    border: 1px solid #3B82F6;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+/* cor do texto da caixa e tamanho da fonte */
+.caixa-localizacao h3 {
+    color: #F8FAFC;
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+/* estiliza a caixa de localização tamanho  */
+.caixa-localizacao iframe {
+    width: 100%;
+    height: 120px;
+    border: 0;
+    border-radius: 8px;
+    display: block;
+}
+/* estiliza o footer ,fundo,texto */
+footer {
+    font-family: 'Barlow';
+    background-color: #1A1F2E;
+    padding: 10px;
+    color: #94A3BB;
+    text-align: center;
+}
+/* tamanho da logo */
+.logo-footer {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 250px;
+}
+/* estiliza o titulo com o tamanho da escrita */
+.titulo-lista {
+    font-size: x-large;
+}
+
+a {
+    color: #94A3BB;
+}
+/* estiliza o conteiner parte de cima  */
+.footer-container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    border-bottom: 2px solid #8B5CF6;
+}
+/* estiliza o container 2 parte de baixo*/
+.footer-container2 {
+    display: flex;
+    gap: 560px;
+    justify-content: center;
+}
+/* estiliza a localização */
+.contato-localizacao {
+    display: flex;
+    gap: 20px;
 }

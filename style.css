@@ -53,6 +53,7 @@ ul {
 }
 
 a {
+    cursor: pointer;
     color: #F8FAFC;
 }
 

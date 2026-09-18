@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+
+Cores:
+
+Fundo do body: 0B0F1A
+
+Fundo dos cards: 1A1F2E
+
+Cor primaria: 3B82F6
+
+Cor secundaria: 8B5CF6
+
+Texto principal: F8FAFC
+
+Texto secundario: 94A3B8
+
+Sucesso: 22C55E
+
+Erro: EF4444 */
+
+/* Estilos globais */
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Estilos para o elemento html */
+html {
+  scroll-behavior: smooth;
+}
+
+/* mudando a fonte do h1 e h2 */
+h1 , h2{
+    font-family: 'League Spartan';
+}
+
+/* mudando a fonte do paragrafo e links */
+p, a {
+    font-family: 'Barlow';
+}
+
+/* dando um espaço em cima */
+nav {
+    margin-top: 10px;
+}
+
+/* estilizando o header*/
+header {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    background-color: #0B0F1A;
+    border: 2px solid #1A1F2E;
+    padding: 10px;
+}
+
+/* estilizando a lista */
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+/* estilizando o link */
+a {
+    cursor: pointer;
+    color: #F8FAFC;
+}
+
+/* estilizando o link para quando passar o mouse por cima */
+nav a:hover {
+    padding: 8px;
+    background-color: #3B82F6;
+    border-radius: 20px;
+}
+
+/* limita o tamanho da imagem do header */
+.img-header {
+    width: 100%;
+    max-width: 200px;
+}
+
+/* muda a cor do fundo */
+body {
+    background-color: #0B0F1A;
+}
+
+/* muda a cor do h2 do banner */
+.banner-deco h2{
+    color: #8B5CF6;
+}
+
+/* muda a cor e tamanho do paragrafo do banner */
+.banner-deco p {
+    font-size: large;
+    color: #F8FAFC;
+    margin-bottom: 40px;
+}
+
+/* estiliza o banner */
+.banner-deco {
+    margin-top: 10px;
+    background: linear-gradient(to right, #1A1F2E, #8B5CF6);
+    border: 2px solid #1A1F2E;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+/* muda a cor do link do banner */
+.banner-deco a {
+    padding: 15px;
+    background: linear-gradient(to right, #3B82F6, #8B5CF6);
+    border-radius: 30px;
+}

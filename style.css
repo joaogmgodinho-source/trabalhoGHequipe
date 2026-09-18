@@ -59,7 +59,7 @@ header {
 }
 
 /* estilizando a lista */
-ul {
+.menu {
     display: flex;
     gap: 30px;
 }

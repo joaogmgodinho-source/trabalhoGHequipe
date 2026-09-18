@@ -1,0 +1,65 @@
+/* checkbox do contato */
+.contato-menu {
+    position: relative;
+}
+
+.contato-menu summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.contato-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.caixa-contato {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 280px;
+    padding: 20px;
+    background: #1A1F2E;
+    border: 1px solid #3B82F6;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.caixa-contato h3 {
+    color: #F8FAFC;
+    margin-top: 0;
+}
+
+.caixa-contato label {
+    display: block;
+    color: #F8FAFC;
+    margin-top: 10px;
+}
+
+.caixa-contato input,
+.caixa-contato textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 10px;
+    background: #0B0F1A;
+    color: #F8FAFC;
+    border: 1px solid #3B82F6;
+    border-radius: 8px;
+}
+
+.caixa-contato textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+.caixa-contato button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+    color: white;
+    cursor: pointer;
+}

@@ -519,3 +519,111 @@ a {
         height: 160px;
     }
 }
+
+#proddestq {
+    text-align: center;
+    color: #3B82F6;
+}
+
+.jogos {
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: flex-start;
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.jogo {
+    flex: 0 0 220px;
+    padding: 6px;
+    margin: 10px;
+    background-color: #1A1F2E;
+    border: 1px #8B5CF6 solid;
+    border-radius: 10px;
+}
+
+.jogo h3 {
+    color: #3B82F6;
+    font-family: 'League Spartan';
+}
+
+.desc {
+    color: #F8FAFC;
+    font-family: 'Barlow';
+}
+
+.jogos::-webkit-scrollbar {
+    height:8px;
+}
+
+.jogos ::-webkit-scrollbar-track {
+    background: #1A1F2E;
+    border-radius: 8px;
+}
+
+.jogos::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #3B82F6, #8B5CF6);
+    border-radius: 10px;
+}
+
+.review {
+    width: 100%;
+    width: 500px;
+    max-width: calc(100vw - 30px);
+    padding: 20px;
+    background: #1A1F2E;
+    border: 1px solid #3B82F6;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    margin: 20px auto;
+}
+
+.label-form {
+    display: block;
+    color: #F8FAFC;
+    margin-top: 10px;
+}
+
+.input-form, .texto-form, .review-form {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 10px;
+    background: #0B0F1A;
+    color: #F8FAFC;
+    border: 1px solid #3B82F6;
+    border-radius: 8px;
+}
+
+.botao-form {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+    color: white;
+    cursor: pointer;
+}
+
+.review h2 {
+    text-align: center;
+}
+
+img {
+    max-width: 100px;
+    min-height: 150px;
+    border: 1px white solid;
+    border-radius: 4px;
+}
+
+form p {
+    color: #F8FAFC;
+}
+
+form h2 {
+    color: #3B82F6;
+}

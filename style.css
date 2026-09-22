@@ -613,7 +613,7 @@ a {
     text-align: center;
 }
 
-img {
+.card-jogo {
     max-width: 100px;
     min-height: 150px;
     border: 1px white solid;

@@ -141,3 +141,48 @@ header {
     background: linear-gradient(to right, #3B82F6, #8B5CF6);
     border-radius: 10px;
 }
+
+.review {
+    width: 100%;
+    width: 500px;
+    max-width: calc(100vw - 30px);
+    padding: 20px;
+    background: #1A1F2E;
+    border: 1px solid #3B82F6;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    margin: 20px auto;
+}
+
+.label-form {
+    display: block;
+    color: #F8FAFC;
+    margin-top: 10px;
+}
+
+.input-form, .texto-form, .review-form {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 10px;
+    background: #0B0F1A;
+    color: #F8FAFC;
+    border: 1px solid #3B82F6;
+    border-radius: 8px;
+}
+
+.botao-form {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+    color: white;
+    cursor: pointer;
+}
+
+.review h2 {
+    text-align: center;
+}

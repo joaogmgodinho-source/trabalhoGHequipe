@@ -61,6 +61,10 @@ header {
     background-color: #0B0F1A;
     border: 2px solid #1A1F2E;
     padding: 10px;
+    /* faz a rolagem do header */
+    position: sticky;
+top: 0;
+z-index: 2000;
 }
 
 /* estilizando a lista */
@@ -613,7 +617,7 @@ a {
     text-align: center;
 }
 
-img {
+.card-jogo {
     max-width: 100px;
     min-height: 150px;
     border: 1px white solid;
@@ -626,4 +630,15 @@ form p {
 
 form h2 {
     color: #3B82F6;
+}
+
+/* Define o espaço de rolagem do banner para ele ficar no começo */
+.banner-deco {
+    scroll-margin-top: 110px;
+}
+/* Define um espaço para as outras seções não ficarem escondidas pelo cabeçalho */
+.jogos,
+.review,
+#footer {
+    scroll-margin-top: 100px;
 }

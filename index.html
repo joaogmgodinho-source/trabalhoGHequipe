@@ -6,6 +6,7 @@
     <title>GameRate</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Cabeçalho da pagina -->
@@ -26,37 +27,259 @@
             </ul>
 
         </nav>
-
     </header>
 
+    <!-- Lista de jogos disponíveis para review -->
 
     <main>
-
         <!-- Banner de destaque -->
-        <section class="banner-deco">
+<section class="banner-deco" id="banner-deco">
 
-            <h2>Descubra, Avalie e Compartilhe</h2>
-            <p>O GameRate é o lugar perfeito para encontrar as melhores avaliações de jogos e compartilhar sua opinião com a comunidade.</p>
+    <h2>Descubra, Avalie e Compartilhe</h2>
+    <p>O GameRate é o lugar perfeito para encontrar as melhores avaliações de jogos e compartilhar sua opinião com a comunidade.</p>
 
-            <a href="#">🎮 Ver jogos</a>
+    <a href="#jogos">🎮 Ver jogos</a>
 
+</section>
+
+
+        <h2 id="proddestq">Jogos em Destaque</h2>
+
+        <section class="jogos" id="jogos">
+        <article class="jogo">
+            <h3>Red Dead Redemption II</h3>
+                <figure>
+                    <img src="img/rdr2.png" alt="Red Dead Redemption 2" class="card-jogo">
+            <figcaption class="desc">Uma aventura de mundo aberto ambientada no Velho Oeste, acompanhando Arthur Morgan e sua gangue em uma história marcada por escolhas e sobrevivência.</figcaption>
+                </figure>
+        </article>
+        <article class="jogo">
+            <h3>Resident Evil 9: Requiem</h3>
+            <figure>
+                <img src="img/re9.png" alt="Resident Evil 9" class="card-jogo">
+            <figcaption class="desc">Um novo capítulo da famosa franquia de terror da Capcom, trazendo exploração, combate e uma nova ameaça para enfrentar.</figcaption>
+            </figure>
+        </article>
+        <article class="jogo">
+            <h3>Zenless Zone Zero</h3>
+            <figure>
+                <img src="img/zzz.png"  class="card-jogo">
+            </figure>
+            <figcaption class="desc">Um RPG de ação urbano com combates rápidos, personagens únicos e uma cidade cheia de mistérios e perigos.</figcaption>
+        </article>
+        <article class="jogo">
+            <h3>Borderlands 3</h3>
+            <figure>
+                <img src="img/bl3.png" alt="Borderlands 3" class="card-jogo">
+            <figcaption class="desc">Um looter-shooter frenético com milhões de armas, habilidades especiais e muito caos enquanto você enfrenta novos inimigos pela galáxia.</figcaption>
+            </figure>
+        </article>
+            <article class="jogo">
+                <h3>Call Of Duty: Modern Warfare (2019)</h3>
+                <figure>
+                    <img src="img/cod mw19.png" class="card-jogo">
+                    <figcaption class="desc">Um reboot da clássica franquia de tiro, trazendo uma campanha intensa, combate moderno e uma experiência multiplayer competitiva.</figcaption>
+                </figure>
+            </article>
+            <article class="jogo">
+                <h3>Mortal Kombat 1</h3>
+                <figure>
+                    <img src="img/mk1.png" alt="Mortal Kombat 1" class="card-jogo">
+                    <figcaption class="desc">Um reboot do universo de Mortal Kombat, reunindo personagens conhecidos em uma nova história cheia de combates brutais e fatalities.</figcaption>
+                </figure>
+            </article>
+            <article class="jogo">
+                <h3>Hollow Knight</h3>
+                <figure>
+                    <img src="img/hk.png" class="card-jogo">
+                    <figcaption class="desc">Uma aventura metroidvania sombria e desafiadora, ambientada em um vasto reino subterrâneo repleto de criaturas, segredos e batalhas.</figcaption>
+                </figure>
+            </article>
+            <article class="jogo">
+                <h3>Chaves Kart</h3>
+                <figure>
+                    <img src="img/ck.png" class="card-jogo">
+                    <figcaption class="desc">Um jogo de corrida inspirado na clássica série mexicana, colocando Chaves e seus amigos em pistas malucas com itens e obstáculos.</figcaption>
+                </figure>
+            </article>
+            <article class="jogo">
+                <h3>Dark Souls II</h3>
+                <figure>
+                    <img src="img/ds2.png" class="card-jogo">
+                    <figcaption class="desc">Um RPG de ação sombrio e desafiador, marcado por combates difíceis, exploração perigosa e um enorme mundo cheio de inimigos e segredos.</figcaption>
+                </figure>
+            </article>
+            <article class="jogo">
+                <h3>Miami Traffic 3</h3>
+                <figure>
+                    <img src="img/mt3.png" class="card-jogo">
+                    <figcaption class="desc">Um jogo caótico de mundo aberto estrelado por gatos, inspirado em clássicos como GTA e cheio de situações absurdas.</figcaption>
+                </figure>
+            </article>
+            <article class="jogo">
+                <h3>WATCH_DOGS</h3>
+                    <figure>
+                        <img src="img/wd1.png" class="card-jogo">
+                        <figcaption class="desc">Um jogo de ação e mundo aberto onde tecnologia e hacking são suas principais ferramentas para explorar e enfrentar o crime em Chicago.</figcaption>
+                    </figure>
+            </article>
+            <article class="jogo">
+                <h3>Bad Rats</h3>
+                <figure>
+                    <img src="img/br.png" class="card-jogo">
+                    <figcaption class="desc">Um jogo de quebra-cabeças completamente insano onde você controla ratos e usa objetos do cenário para derrotar seus inimigos.</figcaption>
+                </figure>
+            </article>
         </section>
+        </section>     
 
+        <!-- Formulário para efetuação de review -->
 
-        <h2>Subtítulo exemplo</h2>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti explicabo </p>
-
-        <h2>Subtítulo exemplo</h2>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti explicabo </p>
-
+<section class="review" id="review">
+        <form>
+            <h2>Compartilhe sua opinião!</h2>
+             <p>Insira sua resenha:</p>
+          
+              <label for="nome" class="label-form">Nome de Usuário:</label>
+            <input id="nome" type="text" placeholder="Nome..." required class="input-form">
+           
+            <label for="reviewjogo" class="label-form">Selecione o jogo:<label>
+             <select id="review" class="review-form">
+                <option value="rdr2">Red Dead Redemption II</option>
+                <option value="re9">Resident Evil 9</option>
+                <option value="=zzz">Zenless Zone Zero</option>
+                <option value="bl3">Borderlands 3</option>
+                <option value="cod mw19">Call of Duty: Modern Warfare (2019)</option>
+                <option value="mk1">Mortal Kombat 1</option>
+                <option value="hk">Hollow Knight</option>
+                <option value="ck">Chaves Kart</option>
+                <option value="ds2">Dark Souls II</option>
+                <option value="mt3">Miami Traffic 3</option>
+                <option value="wd1">WATCH_DOGS</option>
+                <option value="br">Bad Rats</option>
+             </select>
+            <label for="texto" class="label-form">Coloque sua review!</label>
+            <textarea name="texto" id="texto" class="texto-form"></textarea>
+            <button type="button" class="botao-form">Enviar review</button>
+           
+        </form>
+        </section>
     </main>
 
 
-    <footer>
+    <!-- Aqui fica o Rodapé da pagina  -->
+    <footer id="footer">
 
-        <p>&copy; exemplo</p>
+
+        <!-- Container do rodapé com as redes sociais e patrocinadores -->
+        <div class="footer-container">
+            <!-- logo da empresa -->
+            <img src="img/logo.png" alt="Logo" width="200" height="100" class="logo-footer">
+
+            <nav>
+
+
+                <ul>
+                    <!-- titulo das redes sociais -->
+                    <li class="titulo-lista">Redes Sociais</li>
+                    <!-- imagens do instagram que levarão para a rede social -->
+                    <li><a href="https://www.instagram.com/" target="_blank"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+                                alt="instagram" width="22" height="22">Instagram</a></li>
+                    <!-- imagens do facebook que levarão para a rede social -->
+                    <li><a href="https://www.facebook.com/" target="_blank"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"
+                                alt="facebook" width="22" height="22">Facebook</a></li>
+                    <!-- imagens do youtube que levarão para a rede social -->
+                    <li><a href="https://www.youtube.com/" target="_blank"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+                                alt="youtube" width="22" height="22">YouTube</a></li>
+                    <!-- imagem do twitter e link que levará para a rede social -->
+                    <li><a href="https://twitter.com/" target="_blank"><img
+                                src="img/twitter.png"
+                                alt="twitter" width="27" height="22">Twitter</a></li>
+
+
+                </ul>
+            </nav>
+
+            <ul>
+                <!-- titulo do patrocinadores -->
+                <li class="titulo-lista">Patrocinadores</li>
+                <!-- imagem do patrocinador e link que levará para o site -->
+                <li><a href="https://www.xbox.com/pt-BR/" target="_blank"><img
+                            src="https://img.icons8.com/?size=100&id=T2CwYFr5ouk6&format=png&color=000000" alt="xbox"
+                            width="22" height="22">Xbox</a></li>
+                            <!-- imagem do patrocinador e link que levará para o site -->
+                <li><a href="https://www.playstation.com/pt-br/" target="_blank"><img
+                            src="https://img.icons8.com/?size=100&id=69509&format=png&color=000000" alt="playstation"
+                            width="22" height="22">PlayStation</a></li>
+            </ul>
+
+        </div>
+        <!-- Container do rodapé com o contato e localização e copyright -->
+        <div class="footer-container2">
+
+            <!-- copyright -->
+            <p>&copy; 2026 GameRate - Todos os direitos reservados<br>Desenvolvido por: Paulo Donizete, João Gustavo, Eduardo Walter</p>
+            
+
+            <!-- checkbox  do contato -->
+            <ul class="contato-localizacao">
+                <li>
+                    <details class="contato-menu">
+                        <!-- summary do contato que  aparece na tela para clicar -->
+                        <summary>Contato</summary>
+
+                        <div class="caixa-contato">
+                            <!-- formulário de contato -->
+                            <form>
+                                <!-- label para o campo de nome -->
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" required>
+                                <!-- label para o campo de e-mail -->
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" required>
+                                <!-- label para o campo de mensagem -->
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" required></textarea>
+                                <!-- botão para enviar o formulário -->
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </details>
+                </li>
+                <!-- aba de localização -->
+                <li>
+                    <details class="localizacao-menu">
+                        <!-- summary da localização que aparece na tela para clicar -->
+                        <summary>Localização</summary>
+
+                        <div class="caixa-localizacao">
+                            <!-- titulo da localização -->
+                            <h3>Localização</h3>
+                            <!-- iframe para o mapa -->
+                            <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Belterra%2C%291%2C%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%2C%20SP"
+                                target="_blank">
+                                <iframe
+                                    src="https://www.google.com/maps?q=Rua%20Belterra%2C%201%2C%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%2C%20SP&output=embed"
+                                    loading="lazy" allowfullscreen>
+                                </iframe>
+                            </a>
+
+                        </div>
+
+                    </details>
+                </li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+</body>
+
+
 
     </footer>
 

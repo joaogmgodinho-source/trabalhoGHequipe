@@ -1,25 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 
-
 Cores:
 
 Fundo do body: 0B0F1A
-
 Fundo dos cards: 1A1F2E
-
 Cor primaria: 3B82F6
-
 Cor secundaria: 8B5CF6
-
 Texto principal: F8FAFC
-
 Texto secundario: 94A3B8
-
 Sucesso: 22C55E
-
-Erro: EF4444 */
+Erro: EF4444
+*/
 
 /* Estilos globais */
 * {
@@ -30,16 +24,26 @@ Erro: EF4444 */
 
 /* Estilos para o elemento html */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+/* Corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0B0F1A;
+    overflow-x: hidden;
 }
 
 /* mudando a fonte do h1 e h2 */
-h1 , h2{
+h1,
+h2 {
     font-family: 'League Spartan';
 }
 
 /* mudando a fonte do paragrafo e links */
-p, a {
+p,
+a {
     font-family: 'Barlow';
 }
 
@@ -48,18 +52,23 @@ nav {
     margin-top: 10px;
 }
 
-/* estilizando o header*/
+/* estilizando o header */
 header {
     display: flex;
     gap: 50px;
     justify-content: center;
+    align-items: center;
     background-color: #0B0F1A;
     border: 2px solid #1A1F2E;
     padding: 10px;
+    /* faz a rolagem do header */
+    position: sticky;
+top: 0;
+z-index: 2000;
 }
 
 /* estilizando a lista */
-.menu{
+.menu {
     display: flex;
     gap: 30px;
 }
@@ -81,15 +90,11 @@ nav a:hover {
 .img-header {
     width: 100%;
     max-width: 200px;
-}
-
-/* muda a cor do fundo */
-body {
-    background-color: #0B0F1A;
+    height: auto;
 }
 
 /* muda a cor do h2 do banner */
-.banner-deco h2{
+.banner-deco h2, h1 {
     color: #8B5CF6;
 }
 
@@ -115,25 +120,34 @@ body {
     background: linear-gradient(to right, #3B82F6, #8B5CF6);
     border-radius: 30px;
 }
-/* checkbox do contato no footer*/
+
+/* ========================================
+   CONTATO
+   ======================================== */
+
+/* checkbox do contato no footer */
 .contato-menu {
     position: relative;
 }
+
 /* muda o cursor */
 .contato-menu summary {
     cursor: pointer;
     list-style: none;
 }
-/* estiliza o menu */
+
+/* remove marcador */
 .contato-menu summary::-webkit-details-marker {
     display: none;
 }
+
 /* caixa contato com cores e tamanho */
 .caixa-contato {
     position: absolute;
     bottom: 35px;
     left: 0;
     width: 280px;
+    max-width: calc(100vw - 30px);
     padding: 20px;
     background: #1A1F2E;
     border: 1px solid #3B82F6;
@@ -141,17 +155,20 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
-/* estiliza  o h3 da caixa de contato */
+
+/* estiliza o h3 da caixa de contato */
 .caixa-contato h3 {
     color: #F8FAFC;
     margin-top: 0;
 }
+
 /* estiliza o label na caixa de contato */
 .caixa-contato label {
     display: block;
     color: #F8FAFC;
     margin-top: 10px;
 }
+
 /* as cores da caixa de contato e borda tamanho */
 .caixa-contato input,
 .caixa-contato textarea {
@@ -164,12 +181,14 @@ body {
     border: 1px solid #3B82F6;
     border-radius: 8px;
 }
-/* estiliza a caixa de contato  */
+
+/* estiliza a caixa de contato */
 .caixa-contato textarea {
     height: 90px;
     resize: vertical;
 }
-/* estiliza o botao caixa de contato com cores,tamanho */
+
+/* estiliza o botao caixa de contato */
 .caixa-contato button {
     width: 100%;
     margin-top: 15px;
@@ -180,25 +199,34 @@ body {
     color: white;
     cursor: pointer;
 }
-/* checkbox da localização no footer*/
+
+/* ========================================
+   LOCALIZAÇÃO
+   ======================================== */
+
+/* checkbox da localização no footer */
 .localizacao-menu {
     position: relative;
 }
-/* estiliza a checkbox do summary  */
+
+/* estiliza o summary */
 .localizacao-menu summary {
     cursor: pointer;
     list-style: none;
 }
-/* estiliza a localização  */
+
+/* remove marcador */
 .localizacao-menu summary::-webkit-details-marker {
     display: none;
 }
-/* cor de fundo e tamanhos da caixa de localização */
+
+/* caixa de localização */
 .caixa-localizacao {
     position: absolute;
     bottom: 35px;
     left: 0;
     width: 280px;
+    max-width: calc(100vw - 30px);
     padding: 15px;
     background: #1A1F2E;
     border: 1px solid #3B82F6;
@@ -206,13 +234,15 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
+
 /* cor do texto da caixa e tamanho da fonte */
 .caixa-localizacao h3 {
     color: #F8FAFC;
     margin: 0 0 10px;
     font-size: 18px;
 }
-/* estiliza a caixa de localização tamanho  */
+
+/* estiliza o mapa */
 .caixa-localizacao iframe {
     width: 100%;
     height: 120px;
@@ -220,7 +250,12 @@ body {
     border-radius: 8px;
     display: block;
 }
-/* estiliza o footer ,fundo,texto */
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+/* estiliza o footer */
 footer {
     font-family: 'Barlow';
     background-color: #1A1F2E;
@@ -228,35 +263,388 @@ footer {
     color: #94A3BB;
     text-align: center;
 }
+
 /* tamanho da logo */
 .logo-footer {
     margin-top: 30px;
     width: 100%;
     max-width: 250px;
+    
+    
+
 }
-/* estiliza o titulo com o tamanho da escrita */
+
+/* titulo das listas */
 .titulo-lista {
     font-size: x-large;
 }
 
+/* links */
 a {
     color: #94A3BB;
 }
-/* estiliza o conteiner parte de cima  */
+
+/* estiliza o container parte de cima */
 .footer-container {
     display: flex;
     gap: 100px;
     justify-content: center;
     border-bottom: 2px solid #8B5CF6;
 }
-/* estiliza o container 2 parte de baixo*/
+
+/* estiliza o container 2 parte de baixo */
 .footer-container2 {
     display: flex;
     gap: 560px;
     justify-content: center;
+    align-items: center;
 }
-/* estiliza a localização */
+
+/* estiliza contato e localização */
 .contato-localizacao {
     display: flex;
     gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* ========================================
+   RESPONSIVIDADE - TABLET E CELULAR
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    /* evita rolagem horizontal */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+    header {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+
+    /* CONTEÚDO */
+    main {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    /* BANNER */
+    .banner-deco {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 12px;
+        padding: 25px 20px;
+        border-radius: 30px;
+    }
+
+    .banner-deco h2 {
+        font-size: 28px;
+        line-height: 1.05;
+    }
+
+    .banner-deco p {
+        font-size: 17px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+
+    .banner-deco a {
+        display: inline-block;
+        padding: 13px 18px;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 10px;
+    }
+
+    .footer-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 20px;
+    }
+
+    .logo-footer {
+        width: 160px;
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .footer-container nav {
+        width: 100%;
+    }
+
+    .footer-container nav ul,
+    .footer-container > ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* TIRA O GAP GIGANTE DO DESKTOP */
+    .footer-container2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding-top: 20px;
+    }
+
+    .contato-localizacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* ========================================
+       CONTATO E LOCALIZAÇÃO NO CELULAR
+       ======================================== */
+
+    .contato-menu,
+    .localizacao-menu {
+        position: relative;
+    }
+
+    /*
+       IMPORTANTE:
+       As caixas ficam ABSOLUTAS em relação
+       ao botão, e não FIXED na tela.
+       Assim elas não cobrem o botão de fechar.
+    */
+    .caixa-contato,
+    .caixa-localizacao {
+        position: absolute;
+        bottom: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100vw - 30px);
+        max-width: 350px;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    /* MAPA NO CELULAR */
+    .caixa-localizacao iframe {
+        width: 100%;
+        height: 180px;
+    }
+
+    /* CONTATO NO CELULAR */
+    .caixa-contato {
+        padding: 15px;
+    }
+
+    .caixa-contato input,
+    .caixa-contato textarea {
+        max-width: 100%;
+    }
+}
+
+/* ========================================
+   CELULARES PEQUENOS
+   ======================================== */
+
+@media (max-width: 400px) {
+
+    .menu {
+        gap: 4px;
+    }
+
+    .menu li a {
+        font-size: 14px;
+        padding: 7px 8px;
+    }
+
+    .banner-deco {
+        padding: 22px 16px;
+    }
+
+    .banner-deco h2 {
+        font-size: 25px;
+    }
+
+    .banner-deco p {
+        font-size: 16px;
+    }
+
+    .caixa-localizacao,
+    .caixa-contato {
+        width: calc(100vw - 20px);
+    }
+
+    .caixa-localizacao iframe {
+        height: 160px;
+    }
+}
+
+#proddestq {
+    text-align: center;
+    color: #3B82F6;
+}
+
+.jogos {
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: flex-start;
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.jogo {
+    flex: 0 0 220px;
+    padding: 6px;
+    margin: 10px;
+    background-color: #1A1F2E;
+    border: 1px #8B5CF6 solid;
+    border-radius: 10px;
+}
+
+.jogo h3 {
+    color: #3B82F6;
+    font-family: 'League Spartan';
+}
+
+.desc {
+    color: #F8FAFC;
+    font-family: 'Barlow';
+}
+
+.jogos::-webkit-scrollbar {
+    height:8px;
+}
+
+.jogos ::-webkit-scrollbar-track {
+    background: #1A1F2E;
+    border-radius: 8px;
+}
+
+.jogos::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #3B82F6, #8B5CF6);
+    border-radius: 10px;
+}
+
+.review {
+    width: 100%;
+    width: 500px;
+    max-width: calc(100vw - 30px);
+    padding: 20px;
+    background: #1A1F2E;
+    border: 1px solid #3B82F6;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    margin: 20px auto;
+}
+
+.label-form {
+    display: block;
+    color: #F8FAFC;
+    margin-top: 10px;
+    font-family: 'Balow';
+}
+
+.input-form, .texto-form, .review-form {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 10px;
+    background: #0B0F1A;
+    color: #F8FAFC;
+    border: 1px solid #3B82F6;
+    border-radius: 8px;
+}
+
+.botao-form {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+    color: white;
+    cursor: pointer;
+}
+
+.review h2 {
+    text-align: center;
+}
+
+.card-jogo {
+    max-width: 100px;
+    min-height: 150px;
+    border: 1px white solid;
+    border-radius: 4px;
+}
+
+form p {
+    color: #F8FAFC;
+}
+
+form h2 {
+    color: #3B82F6;
+}
+
+/* Define o espaço de rolagem do banner para ele ficar no começo */
+.banner-deco {
+    scroll-margin-top: 110px;
+}
+/* Define um espaço para as outras seções não ficarem escondidas pelo cabeçalho */
+.jogos,
+.review,
+#footer {
+    scroll-margin-top: 100px;
+}
+
+.sobre {
+    background-color: #1A1F2E;
+    padding: 10px;
+    color: #F8FAFC;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #3B82F6;
+
 }

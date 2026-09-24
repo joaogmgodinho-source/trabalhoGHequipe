@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 
@@ -60,6 +61,10 @@ header {
     background-color: #0B0F1A;
     border: 2px solid #1A1F2E;
     padding: 10px;
+    /* faz a rolagem do header */
+    position: sticky;
+top: 0;
+z-index: 2000;
 }
 
 /* estilizando a lista */
@@ -115,6 +120,9 @@ nav a:hover {
     background: linear-gradient(to right, #3B82F6, #8B5CF6);
     border-radius: 30px;
 }
+
+
+
 
 /* ========================================
    CONTATO
@@ -302,6 +310,56 @@ a {
     align-items: center;
     padding: 0;
     margin: 0;
+}
+
+.pagina-jogo {
+    text-align: center;
+    margin: 1px auto;
+    width: 720px;
+    height: auto;
+    background-color: #1a1f2e;
+    border-radius: 4px;
+}
+
+.pagina-jogo h1 {
+    padding: 12px;
+    text-align: center;
+    font-family: "League Spartan";
+    color: #3B82F6
+}
+
+.pagina-jogo img{
+    display: block;
+    width: 390px;
+    height: 600px;
+    border: 3px white solid;
+    border-radius: 4px;
+    margin: 1px auto;
+}
+
+.pagina-jogo p { 
+    font-family: 'Barlow';
+    color: white;
+    text-align: center;
+
+}
+
+.visu {    
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8B5CF6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8B5CF6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
 /* ========================================
@@ -612,7 +670,7 @@ a {
     text-align: center;
 }
 
-img {
+.card-jogo {
     max-width: 100px;
     min-height: 150px;
     border: 1px white solid;
@@ -626,3 +684,16 @@ form p {
 form h2 {
     color: #3B82F6;
 }
+
+/* Define o espaço de rolagem do banner para ele ficar no começo */
+.banner-deco {
+    scroll-margin-top: 110px;
+}
+/* Define um espaço para as outras seções não ficarem escondidas pelo cabeçalho */
+.jogos,
+.review,
+#footer {
+    scroll-margin-top: 100px;
+}
+
+

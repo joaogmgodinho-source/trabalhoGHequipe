@@ -701,3 +701,42 @@ form h2 {
     border: 1px solid #3B82F6;
 
 }
+
+.review-recentes {
+    background-color: #1A1F2E;
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #3B82F6;
+    border-radius: 10px;
+}
+
+.review-recentes img {
+    width: 100%;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.card-review {
+    display: flex;
+    gap: 10px;
+    background-color: #0B0F1A;
+    border-radius: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.review-recentes h2 {
+    color: #3B82F6;
+}
+
+.review-recentes h3, p {
+    color: #F8FAFC;
+}
+
+.comentario {
+    font-size: large;
+    background-color: #3b83f628;
+    border-radius: 35px;
+    padding: 10px;
+}

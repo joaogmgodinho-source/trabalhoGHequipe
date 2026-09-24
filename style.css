@@ -15,8 +15,6 @@ Sucesso: 22C55E
 Erro: EF4444
 */
 
-
-
 /* Estilos globais */
 * {
     text-decoration: none;
@@ -37,10 +35,9 @@ body {
     overflow-x: hidden;
 }
 
-/* mudando a fonte do h1, h2 e h3 */
+/* mudando a fonte do h1 e h2 */
 h1,
-h2,
-h3 {
+h2 {
     font-family: 'League Spartan';
 }
 
@@ -123,6 +120,9 @@ nav a:hover {
     background: linear-gradient(to right, #3B82F6, #8B5CF6);
     border-radius: 30px;
 }
+
+
+
 
 /* ========================================
    CONTATO
@@ -382,11 +382,6 @@ a {
         flex-direction: column;
         gap: 10px;
         padding: 15px 10px;
-    }
-
-    .img-header {
-        width: 150px;
-        max-width: 100%;
     }
 
     nav {
@@ -704,43 +699,5 @@ form h2 {
     margin: 20px;
     border-radius: 10px;
     border: 1px solid #3B82F6;
-}
 
-.review-recentes {
-    background-color: #1A1F2E;
-    padding: 15px;
-    margin: 20px;
-    border: 1px solid #3B82F6;
-    border-radius: 10px;
-}
-
-.review-recentes img {
-    width: 100%;
-    max-width: 80px;
-    max-height: 80px;
-}
-
-.card-review {
-    display: flex;
-    gap: 10px;
-    background-color: #0B0F1A;
-    border-radius: 40px;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.review-recentes h2 {
-    color: #3B82F6;
-}
-
-.review-recentes h3, p {
-    color: #F8FAFC;
-}
-
-.comentario {
-    font-size: large;
-    background-color: #3b83f628;
-    border-radius: 35px;
-    padding: 10px;
 }

@@ -121,6 +121,9 @@ nav a:hover {
     border-radius: 30px;
 }
 
+
+
+
 /* ========================================
    CONTATO
    ======================================== */
@@ -307,6 +310,56 @@ a {
     align-items: center;
     padding: 0;
     margin: 0;
+}
+
+.pagina-jogo {
+    text-align: center;
+    margin: 1px auto;
+    width: 720px;
+    height: auto;
+    background-color: #1a1f2e;
+    border-radius: 4px;
+}
+
+.pagina-jogo h1 {
+    padding: 12px;
+    text-align: center;
+    font-family: "League Spartan";
+    color: #3B82F6
+}
+
+.pagina-jogo img{
+    display: block;
+    width: 390px;
+    height: 600px;
+    border: 3px white solid;
+    border-radius: 4px;
+    margin: 1px auto;
+}
+
+.pagina-jogo p { 
+    font-family: 'Barlow';
+    color: white;
+    text-align: center;
+
+}
+
+.visu {    
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8B5CF6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8B5CF6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
 /* ========================================
